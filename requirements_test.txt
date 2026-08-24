@@ -1,0 +1,6 @@
+pytest==8.3.5
+pytest-asyncio==0.25.3
+pytest-cov==6.0.0
+pytest-homeassistant-custom-component==0.13.243
+aioresponses==0.7.8
+ruff==0.9.6

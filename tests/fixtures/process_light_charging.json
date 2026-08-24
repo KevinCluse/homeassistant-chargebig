@@ -1,0 +1,34 @@
+{
+  "chargingProcessDto": {
+    "id": 100001,
+    "startDate": "2026-08-24T17:52:31.938545",
+    "endDate": null,
+    "duration": "PT3H47M23.455350362S",
+    "amountCent": 0,
+    "chargedAmountCorrectedKWh": 16.508,
+    "chargingActivePowerKW": 4.442,
+    "chargingStatus": "CHARGING",
+    "paymentMethod": "SEPA",
+    "errorCode": 0,
+    "tariff": {
+      "id": 214,
+      "name": "chargeBIG - 7,4 kW-Laden",
+      "baseFeeCents": 0,
+      "centsPerKwh": 40,
+      "blockFeeCentsPerMin": 0,
+      "blockFeeMaxCents": 0,
+      "blockFeeOffsetMinutes": 0,
+      "priority": 10,
+      "icon": "",
+      "paymentMethods": ["VISA", "MASTER_CARD", "SEPA", "PAYPAL", "VOUCHER"]
+    },
+    "userId": 1,
+    "invoiceAvailable": false
+  },
+  "chargePointCode": "XXYXX",
+  "powerLimitKW": 4.66,
+  "energyLimitWh": 0,
+  "asymmetricLoadBalancing": false,
+  "maxPhaseCurrentRegulated": false,
+  "deratingIndex": 0
+}
