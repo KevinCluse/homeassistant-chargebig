@@ -1,6 +1,7 @@
-pytest==8.3.5
-pytest-asyncio==0.25.3
-pytest-cov==6.0.0
-pytest-homeassistant-custom-component==0.13.243
-aioresponses==0.7.8
-ruff==0.9.6
+# pytest, pytest-asyncio and pytest-cov are intentionally NOT pinned here: they are
+# transitive dependencies of pytest-homeassistant-custom-component, which pins its own
+# compatible versions of them. Pinning them independently caused a ResolutionImpossible
+# error in CI (pytest-asyncio==0.25.3 here vs. ==0.26.0 required by phacc==0.13.243).
+pytest-homeassistant-custom-component==0.13.316
+aioresponses==0.7.9
+ruff==0.16.4
