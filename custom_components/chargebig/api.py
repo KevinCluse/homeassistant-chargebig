@@ -1,4 +1,4 @@
-"""Minimal async client for the undocumented chargeBIG (carica) backend.
+"""Minimal async client for the undocumented chargeBIG backend.
 
 This module deliberately knows nothing about Home Assistant so that it can be exercised
 on its own. The protocol was reconstructed from a HAR capture of the official web app;
@@ -65,7 +65,7 @@ class ChargebigApiError(ChargebigError):
 
 
 class ChargebigClient:
-    """Talks to ``carica.chargebig.com`` on behalf of one charger user."""
+    """Talks to the chargeBIG backend on behalf of one charger user."""
 
     def __init__(
         self,

@@ -4,12 +4,12 @@
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-Control and monitor a [chargeBIG](https://chargebig.com/) (carica) EV charge point from
+Control and monitor a [chargeBIG](https://chargebig.com/) EV charge point from
 Home Assistant: start, pause and resume charging, and see live power, energy and
 session cost — so you can automate charging from other events, e.g. "start charging when
 the car's charge cable is plugged in".
 
-This talks directly to the same backend the [carica web app](https://app.carica.chargebig.de/)
+This talks directly to the same backend the [chargeBIG web app](https://app.carica.chargebig.de/)
 uses. There is no official chargeBIG API; the protocol was reconstructed from a capture
 of the web app's own network traffic — see [`docs/api.md`](docs/api.md) for the details
 and its limits. As an unofficial integration against an undocumented backend, it can
@@ -34,7 +34,7 @@ directory and restart Home Assistant.
 
 **Settings → Devices & Services → Add Integration → chargeBIG.**
 
-1. Enter the email and password of your carica/chargeBIG account.
+1. Enter the email and password of your chargeBIG account.
 2. Enter the charge point code (the five-character ID from the QR code / NFC tag on the
    charge point, e.g. `XXYXX`).
 

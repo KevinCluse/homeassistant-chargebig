@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "chargeBIG-Konto",
-        "description": "Melde dich mit deinem carica-/chargeBIG-Konto an.",
+        "description": "Melde dich mit deinem chargeBIG-Konto an.",
         "data": {
           "email": "E-Mail",
           "password": "Passwort"
