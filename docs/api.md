@@ -1,4 +1,4 @@
-# chargeBIG / carica API (reverse-engineered)
+# chargeBIG API (reverse-engineered)
 
 This is not a documented, supported API. Everything below was reconstructed from a HAR
 capture of the official web app (`https://app.carica.chargebig.com/`) taken by the

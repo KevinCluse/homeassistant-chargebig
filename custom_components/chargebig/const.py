@@ -6,7 +6,7 @@ from typing import Final
 
 DOMAIN: Final = "chargebig"
 
-#: Backend of the carica web app. The app itself is served from
+#: Backend of the chargeBIG web app. The app itself is served from
 #: ``https://app.carica.chargebig.com`` (``…\.de`` redirects there), but every API
 #: call goes to the bare host.
 API_BASE_URL: Final = "https://carica.chargebig.com"
