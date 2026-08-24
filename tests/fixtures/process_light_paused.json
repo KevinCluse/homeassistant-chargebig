@@ -1,0 +1,20 @@
+{
+  "chargingProcessDto": {
+    "id": 100001,
+    "startDate": "2026-08-24T17:52:31.938545",
+    "endDate": null,
+    "duration": "PT3H48M3.656488181S",
+    "amountCent": 0,
+    "chargedAmountCorrectedKWh": 16.559,
+    "chargingActivePowerKW": 4.443,
+    "chargingStatus": "PAUSED_EVSE",
+    "paymentMethod": "SEPA",
+    "errorCode": 0,
+    "userId": 1,
+    "invoiceAvailable": false
+  },
+  "chargePointCode": "XXYXX",
+  "powerLimitKW": 4.68,
+  "energyLimitWh": 0,
+  "deratingIndex": 0
+}

@@ -1,0 +1,109 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "chargeBIG account",
+        "description": "Sign in with your carica/chargeBIG account.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "charge_point": {
+        "title": "Charge point",
+        "description": "Enter the five-character charge point code, e.g. XXYXX.",
+        "data": {
+          "charge_point_code": "Charge point code"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthenticate",
+        "description": "The stored password for {email} was rejected. Please enter it again.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password.",
+      "cannot_connect": "Failed to connect to chargeBIG.",
+      "charge_point_not_found": "This charge point could not be found.",
+      "unknown": "Unexpected error."
+    },
+    "abort": {
+      "already_configured": "This charge point is already configured.",
+      "reauth_successful": "Reauthentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "chargeBIG options",
+        "data": {
+          "scan_interval_charging": "Poll interval while charging (seconds)",
+          "scan_interval_idle": "Poll interval while idle (seconds)",
+          "tariff_id": "Preferred tariff (id, optional)",
+          "payment_method": "Preferred payment method"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "session_energy": { "name": "Session energy" },
+      "power": { "name": "Charging power" },
+      "session_duration": { "name": "Session duration" },
+      "session_start": { "name": "Session start" },
+      "session_cost": { "name": "Session cost" },
+      "status": {
+        "name": "Charging status",
+        "state": {
+          "charging": "Charging",
+          "paused_evse": "Paused",
+          "unknown": "Unknown"
+        }
+      },
+      "charge_point_status": { "name": "Charge point status" },
+      "power_limit": { "name": "Power limit" },
+      "price_per_kwh": { "name": "Price per kWh" }
+    },
+    "binary_sensor": {
+      "online": { "name": "Online" },
+      "charging": { "name": "Charging" }
+    },
+    "switch": {
+      "charging": { "name": "Charging" }
+    }
+  },
+  "services": {
+    "start_charging": {
+      "name": "Start charging",
+      "description": "Starts a charging session at the given chargeBIG charge point.",
+      "fields": {
+        "device_id": { "name": "Charge point", "description": "The chargeBIG device." },
+        "tariff_id": { "name": "Tariff id", "description": "Overrides the default tariff." }
+      }
+    },
+    "pause_charging": {
+      "name": "Pause charging",
+      "description": "Pauses the running charging session.",
+      "fields": {
+        "device_id": { "name": "Charge point", "description": "The chargeBIG device." }
+      }
+    },
+    "resume_charging": {
+      "name": "Resume charging",
+      "description": "Resumes a paused charging session.",
+      "fields": {
+        "device_id": { "name": "Charge point", "description": "The chargeBIG device." }
+      }
+    },
+    "refresh": {
+      "name": "Refresh",
+      "description": "Polls the charge point status immediately.",
+      "fields": {
+        "device_id": { "name": "Charge point", "description": "The chargeBIG device." }
+      }
+    }
+  }
+}

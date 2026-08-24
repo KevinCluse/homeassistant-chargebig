@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "Test Account",
+  "email": "test@example.com",
+  "newsletterEnabled": false,
+  "firebaseId": "",
+  "getStartChargingEmail": false,
+  "getFinishChargingEmail": true,
+  "emailVerified": true,
+  "userLanguage": "de",
+  "isTerminated": false
+}

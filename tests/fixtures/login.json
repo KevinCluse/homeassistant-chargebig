@@ -1,0 +1,4 @@
+{
+  "accessToken": "eyJhbGciOiJIUzUxMiJ9.example-access-token.signature",
+  "refreshToken": "eyJhbGciOiJIUzUxMiJ9.example-refresh-token.signature"
+}

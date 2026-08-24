@@ -1,0 +1,6 @@
+{
+  "userPaymentTokenDto": [
+    { "token": "TESTTOKEN123456", "paymentMethod": "SEPA", "cardBin": null }
+  ],
+  "voucherDto": []
+}

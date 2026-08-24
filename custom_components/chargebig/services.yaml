@@ -1,0 +1,37 @@
+start_charging:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: chargebig
+    tariff_id:
+      required: false
+      selector:
+        number:
+          min: 0
+          mode: box
+
+pause_charging:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: chargebig
+
+resume_charging:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: chargebig
+
+refresh:
+  fields:
+    device_id:
+      required: true
+      selector:
+        device:
+          integration: chargebig

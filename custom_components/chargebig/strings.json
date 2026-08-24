@@ -1,0 +1,109 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "chargeBIG-Konto",
+        "description": "Melde dich mit deinem carica-/chargeBIG-Konto an.",
+        "data": {
+          "email": "E-Mail",
+          "password": "Passwort"
+        }
+      },
+      "charge_point": {
+        "title": "Ladepunkt",
+        "description": "Gib die fünfstellige Ladepunkt-ID an, z. B. XXYXX.",
+        "data": {
+          "charge_point_code": "Ladepunkt-ID"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Erneut anmelden",
+        "description": "Das Passwort für {email} wurde nicht mehr akzeptiert. Bitte neu eingeben.",
+        "data": {
+          "password": "Passwort"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "E-Mail oder Passwort ist falsch.",
+      "cannot_connect": "Verbindung zu chargeBIG fehlgeschlagen.",
+      "charge_point_not_found": "Dieser Ladepunkt wurde nicht gefunden.",
+      "unknown": "Unerwarteter Fehler."
+    },
+    "abort": {
+      "already_configured": "Dieser Ladepunkt ist bereits eingerichtet.",
+      "reauth_successful": "Erneute Anmeldung erfolgreich."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "chargeBIG-Optionen",
+        "data": {
+          "scan_interval_charging": "Abfrageintervall während des Ladens (Sekunden)",
+          "scan_interval_idle": "Abfrageintervall im Leerlauf (Sekunden)",
+          "tariff_id": "Bevorzugter Tarif (ID, optional)",
+          "payment_method": "Bevorzugtes Zahlungsmittel"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "session_energy": { "name": "Geladene Energie" },
+      "power": { "name": "Ladeleistung" },
+      "session_duration": { "name": "Ladedauer" },
+      "session_start": { "name": "Ladebeginn" },
+      "session_cost": { "name": "Kosten" },
+      "status": {
+        "name": "Ladestatus",
+        "state": {
+          "charging": "Lädt",
+          "paused_evse": "Pausiert",
+          "unknown": "Unbekannt"
+        }
+      },
+      "charge_point_status": { "name": "Ladepunkt-Status" },
+      "power_limit": { "name": "Leistungslimit" },
+      "price_per_kwh": { "name": "Preis pro kWh" }
+    },
+    "binary_sensor": {
+      "online": { "name": "Online" },
+      "charging": { "name": "Lädt" }
+    },
+    "switch": {
+      "charging": { "name": "Laden" }
+    }
+  },
+  "services": {
+    "start_charging": {
+      "name": "Ladevorgang starten",
+      "description": "Startet einen Ladevorgang am angegebenen chargeBIG-Ladepunkt.",
+      "fields": {
+        "device_id": { "name": "Ladepunkt", "description": "Das chargeBIG-Gerät." },
+        "tariff_id": { "name": "Tarif-ID", "description": "Überschreibt den Standardtarif." }
+      }
+    },
+    "pause_charging": {
+      "name": "Ladevorgang pausieren",
+      "description": "Pausiert den laufenden Ladevorgang.",
+      "fields": {
+        "device_id": { "name": "Ladepunkt", "description": "Das chargeBIG-Gerät." }
+      }
+    },
+    "resume_charging": {
+      "name": "Ladevorgang fortsetzen",
+      "description": "Setzt einen pausierten Ladevorgang fort.",
+      "fields": {
+        "device_id": { "name": "Ladepunkt", "description": "Das chargeBIG-Gerät." }
+      }
+    },
+    "refresh": {
+      "name": "Aktualisieren",
+      "description": "Fragt den Status des Ladepunkts sofort ab.",
+      "fields": {
+        "device_id": { "name": "Ladepunkt", "description": "Das chargeBIG-Gerät." }
+      }
+    }
+  }
+}

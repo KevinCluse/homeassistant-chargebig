@@ -1,0 +1,51 @@
+{
+  "code": "XXYXX",
+  "hardwareId": "aaaaaaaaaaaa",
+  "chargingProcessId": 100001,
+  "plugType": "TYPE2",
+  "maxChargingPowerWatt": 7400,
+  "energyLimitkWh": 0.0,
+  "asymmetricLoadBalancing": false,
+  "maxPhaseCurrentRegulated": false,
+  "location": {
+    "id": 1,
+    "name": "Test Location",
+    "title": "Welcome",
+    "description": "Test description",
+    "url": "https://chargebig.com/",
+    "currency": "EURO",
+    "client": { "id": 1, "termsOfService": "…", "logoBig": "", "logoSmall": "" },
+    "backgroundImage": ""
+  },
+  "tariffs": [
+    {
+      "id": 214,
+      "name": "chargeBIG - 7,4 kW-Laden",
+      "baseFeeCents": 0,
+      "centsPerKwh": 40,
+      "blockFeeCentsPerMin": 0,
+      "blockFeeMaxCents": 0,
+      "blockFeeOffsetMinutes": 0,
+      "priority": 10,
+      "icon": "",
+      "paymentMethods": ["VISA", "MASTER_CARD", "SEPA", "PAYPAL", "VOUCHER"]
+    }
+  ],
+  "cabinetStatus": "CHARGEMODE",
+  "chargePointStatus": "Charging",
+  "guaranteedChargingPowerAmpere": 2.2,
+  "paymentMethods": ["VISA", "MASTER_CARD", "PAYPAL", "VOUCHER", "SEPA"],
+  "chargePointMode": "APP",
+  "region": "BadenWürttemberg",
+  "openingTimesConfig": null,
+  "isFavorite": true,
+  "id": 1,
+  "maintenanceFromDate": null,
+  "maintenanceToDate": null,
+  "serviceFromDateTime": null,
+  "serviceToDateTime": null,
+  "isOnline": true,
+  "country": "GERMANY",
+  "emergencyError": false,
+  "blockedAmount": 30
+}

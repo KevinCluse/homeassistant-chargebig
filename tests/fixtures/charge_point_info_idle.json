@@ -1,0 +1,18 @@
+{
+  "code": "XXYXX",
+  "hardwareId": "aaaaaaaaaaaa",
+  "chargingProcessId": 0,
+  "plugType": "TYPE2",
+  "maxChargingPowerWatt": 7400,
+  "location": { "id": 1, "name": "Test Location", "currency": "EURO" },
+  "tariffs": [
+    { "id": 214, "name": "chargeBIG - 7,4 kW-Laden", "centsPerKwh": 40, "priority": 10,
+      "paymentMethods": ["SEPA"] }
+  ],
+  "cabinetStatus": "CHARGEMODE",
+  "chargePointStatus": "Available",
+  "paymentMethods": ["SEPA"],
+  "isOnline": true,
+  "emergencyError": false,
+  "blockedAmount": 0
+}
