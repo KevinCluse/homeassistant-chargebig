@@ -2,6 +2,7 @@
 
 [![Validate](https://github.com/KevinCluse/homeassistant-chargebig/actions/workflows/validate.yml/badge.svg)](https://github.com/KevinCluse/homeassistant-chargebig/actions/workflows/validate.yml)
 [![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 Control and monitor a [chargeBIG](https://chargebig.com/) (carica) EV charge point from
 Home Assistant: start, pause and resume charging, and see live power, energy and
@@ -108,4 +109,4 @@ redacted dump (no email, password or tokens) useful for bug reports.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+GPL-3.0, see [LICENSE](LICENSE).
