@@ -6,7 +6,12 @@ import logging
 from typing import Any
 
 import voluptuous as vol
-from homeassistant.config_entries import ConfigFlow, ConfigFlowResult, OptionsFlow
+from homeassistant.config_entries import (
+    ConfigFlow,
+    ConfigFlowResult,
+    OptionsFlow,
+    OptionsFlowWithReload,
+)
 from homeassistant.const import CONF_EMAIL, CONF_PASSWORD
 from homeassistant.core import callback
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
@@ -160,7 +165,7 @@ class ChargebigConfigFlow(ConfigFlow, domain=DOMAIN):
         return ChargebigOptionsFlow()
 
 
-class ChargebigOptionsFlow(OptionsFlow):
+class ChargebigOptionsFlow(OptionsFlowWithReload):
     """Let the user tune poll intervals and the default tariff/payment method."""
 
     async def async_step_init(self, user_input: dict[str, Any] | None = None) -> ConfigFlowResult:
