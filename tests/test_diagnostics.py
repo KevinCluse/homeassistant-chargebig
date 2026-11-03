@@ -48,3 +48,4 @@ async def test_diagnostics_redacts_secrets(hass: HomeAssistant) -> None:
     # Non-secret fields survive so the dump is still useful for debugging.
     assert diagnostics["charge_point"]["code"] == "XXYXX"
     assert diagnostics["process"]["chargingProcessDto"]["chargingStatus"] == "CHARGING"
+    assert diagnostics["process"]["chargingProcessDto"]["userId"] == "**REDACTED**"

@@ -20,6 +20,7 @@ TO_REDACT = {
     "hardwareId",
     "latitude",
     "longitude",
+    "userId",
 }
 
 

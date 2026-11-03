@@ -1,6 +1,6 @@
 {
   "name": "chargeBIG",
-  "homeassistant": "2024.10.0",
+  "homeassistant": "2025.8",
   "render_readme": true,
   "zip_release": false
 }
