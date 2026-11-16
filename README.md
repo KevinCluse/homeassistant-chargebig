@@ -24,14 +24,25 @@ is needed.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=KevinCluse&repository=homeassistant-chargebig&category=integration)
 
-1. Click the badge above, or in Home Assistant go to **HACS → Integrations**, search for
-   "chargeBIG" and select **Download**.
+<details>
+<summary>Alternative to the button</summary>
+
+1. In Home Assistant, go to **HACS → Integrations**.
+2. Search for "chargeBIG" and select **Download**.
+3. Restart Home Assistant.
+
+</details>
+
+### Manual installation
+
+<details>
+<summary>Manual installation steps</summary>
+
+1. Copy `custom_components/chargebig` into your Home Assistant
+   `config/custom_components/` directory.
 2. Restart Home Assistant.
 
-### Manual
-
-Copy `custom_components/chargebig` into your Home Assistant `config/custom_components/`
-directory and restart Home Assistant.
+</details>
 
 ## Setup
 
