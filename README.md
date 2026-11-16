@@ -1,7 +1,7 @@
 # chargeBIG for Home Assistant
 
 [![Validate](https://github.com/KevinCluse/homeassistant-chargebig/actions/workflows/validate.yml/badge.svg)](https://github.com/KevinCluse/homeassistant-chargebig/actions/workflows/validate.yml)
-[![HACS Custom](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://hacs.xyz)
+[![hacs](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 Control and monitor a [chargeBIG](https://chargebig.com/) EV charge point from
@@ -19,11 +19,14 @@ break if chargeBIG changes their app.
 
 ### HACS (recommended)
 
-1. HACS → the three-dot menu (top right) → **Custom repositories**.
-2. Repository: `https://github.com/KevinCluse/homeassistant-chargebig`, category
-   **Integration** → **Add**.
-3. Find "chargeBIG" in HACS and install it.
-4. Restart Home Assistant.
+chargeBIG is part of the [HACS](https://hacs.xyz) default store, so no custom repository
+is needed.
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=KevinCluse&repository=homeassistant-chargebig&category=integration)
+
+1. Click the badge above, or in Home Assistant go to **HACS → Integrations**, search for
+   "chargeBIG" and select **Download**.
+2. Restart Home Assistant.
 
 ### Manual
 
