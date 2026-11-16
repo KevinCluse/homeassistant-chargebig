@@ -17,19 +17,21 @@ break if chargeBIG changes their app.
 
 ## Installation
 
-### HACS (recommended)
+### Marketplace / HACS (recommended)
 
-chargeBIG is part of the [HACS](https://hacs.xyz) default store, so no custom repository
-is needed.
+chargeBIG is part of the official catalog, so no custom repository is needed — on
+Home Assistant 2026.11 and later, where the built-in **Marketplace** replaced
+[HACS](https://hacs.xyz), as well as on earlier versions still running HACS itself.
 
 [![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=KevinCluse&repository=homeassistant-chargebig&category=integration)
 
 <details>
 <summary>Alternative to the button</summary>
 
-1. In Home Assistant, go to **HACS → Integrations**.
-2. Search for "chargeBIG" and select **Download**.
-3. Restart Home Assistant.
+- **Home Assistant 2026.11+:** go to **Settings → Marketplace**, search for "chargeBIG"
+  and select **Install**.
+- **Earlier versions (HACS):** go to **HACS → Integrations**, search for "chargeBIG",
+  select **Download**, then restart Home Assistant.
 
 </details>
 
