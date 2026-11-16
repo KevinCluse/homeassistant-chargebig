@@ -1,6 +1,6 @@
 # chargeBIG for Home Assistant
 
-[![Validate](https://github.com/KevinCluse/homeassistant-chargebig/actions/workflows/validate.yml/badge.svg)](https://github.com/KevinCluse/homeassistant-chargebig/actions/workflows/validate.yml)
+[![Validate](https://github.com/ConceptAgent/homeassistant-chargebig/actions/workflows/validate.yml/badge.svg)](https://github.com/ConceptAgent/homeassistant-chargebig/actions/workflows/validate.yml)
 [![hacs](https://img.shields.io/badge/HACS-Default-orange.svg)](https://github.com/hacs/integration)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
