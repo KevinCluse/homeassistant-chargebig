@@ -23,7 +23,7 @@ chargeBIG is part of the official catalog, so no custom repository is needed —
 Home Assistant 2026.11 and later, where the built-in **Marketplace** replaced
 [HACS](https://hacs.xyz), as well as on earlier versions still running HACS itself.
 
-[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=KevinCluse&repository=homeassistant-chargebig&category=integration)
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=ConceptAgent&repository=homeassistant-chargebig&category=integration)
 
 <details>
 <summary>Alternative to the button</summary>
